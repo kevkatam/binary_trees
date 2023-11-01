@@ -28,7 +28,7 @@ int is_parent(const binary_tree_t *tree)
 	if (tree == NULL)
 		return (0);
 
-	if (tree->left != NULL || tree->right != NULL)
+	if (tree->left != NULL && tree->right != NULL)
 		j = 1;
 
 	return (j);
