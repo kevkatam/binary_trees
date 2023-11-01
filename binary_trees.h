@@ -57,5 +57,6 @@ int binary_tree_p(const binary_tree_t *tree);
 int binary_tree_is_perfect(const binary_tree_t *tree);
 int is_leaf(const binary_tree_t *tree);
 int is_parent(const binary_tree_t *tree);
+int height(const binary_tree_t *tree);
 
 #endif

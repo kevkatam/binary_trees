@@ -38,10 +38,10 @@ int is_parent(const binary_tree_t *tree)
  * @tree: pointer tot the root node of the tree to calculate the height
  * Return: height of the tree
  */
-size_t height(const binary_tree_t *tree)
+int height(const binary_tree_t *tree)
 {
-	size_t left_h = 0;
-	size_t right_h = 0;
+	int left_h = 0;
+	int right_h = 0;
 
 	if (tree == NULL)
 		return (0);
