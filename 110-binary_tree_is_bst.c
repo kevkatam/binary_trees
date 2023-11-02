@@ -11,7 +11,7 @@ int binary_tree_is_bst(const binary_tree_t *tree)
 	return (binary_tree_bst(tree));
 }
 /**
- * binary_tree_l - checks if binary tree is a leaf
+ * binary_tree_leaf - checks if binary tree is a leaf
  * @tree: pointer to the root node
  * Return: 1 if it's a leaf 0 otherwisw
  */
@@ -38,7 +38,7 @@ int check_appropriate(const binary_tree_t *tree)
 	const binary_tree_t *grandpa;
 
 	if (tree == NULL || tree->parent == NULL ||
-		       	tree->parent->parent == NULL)
+			tree->parent->parent == NULL)
 		return (1);
 
 	parnt = tree->parent;
