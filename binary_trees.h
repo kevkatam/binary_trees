@@ -76,5 +76,7 @@ int binary_tree_is_bst(const binary_tree_t *tree);
 int binary_tree_leaf(const binary_tree_t *tree);
 int binary_tree_bst(const binary_tree_t *tree);
 int check_appropriate(const binary_tree_t *tree);
+bst_t *bst_insert(bst_t **tree, int value);
+bst_t *is_present(bst_t **tree, int value);
 
 #endif
