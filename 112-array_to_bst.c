@@ -10,9 +10,12 @@ bst_t *array_to_bst(int *array, size_t size)
 	bst_t *tree;
 	size_t i;
 
+	tree = NULL;
 	for (i = 0; i < size; i++)
 	{
 		bst_insert(&tree, array[i]);
 	}
-	return (tree);
+	if (i == size)
+		return (tree);
+	return (NULL);
 }
